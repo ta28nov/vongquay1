@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('anh1.webp'); /* Hình nền */
+    background-size: cover; /* Làm đầy toàn bộ màn hình */
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+.wheel-container {
+    margin: 0 auto;
+}
+
+#wheel {
+    margin: 0 auto;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e94e77; /* Button color */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng cho nút */
+}
+
+button:hover {
+   background-color: #d63963; /* Darker shade on hover */
+   transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+h2 {
+   margin-top: 30px; 
+   color: #4a90e2; 
+}
+
+/* Khung nền trắng cho kết quả, lịch sử và top người chơi */
+.result-box, .history-box, .top-players-box {
+   margin-top: 20px; 
+   padding: 15px; 
+   border-radius: 8px; 
+   background-color: rgba(255, 253, 253, 0.9); /* Nền trắng với độ trong suốt */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ cho khung */
+   display: inline-block; /* Center the box */
+}
+
+/* Đặt màu chữ cho nội dung là trắng */
+.result-box,
+.history-box,
+.top-players-box,
+#history,
+#topPlayers {
+   color: rgb(0, 0, 0); /* Màu chữ trắng cho nội dung */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #4a90e2; /* Table border color */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4a90e2; /* Header background color */
+    color: rgb(0, 0, 0); /* Màu chữ trắng cho tiêu đề bảng */
+}
+
+tbody tr:hover {
+    background-color: rgba(233, 78, 119, 0.3); /* Highlight row on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+   h1 {
+       font-size: 24px; /* Giảm kích thước tiêu đề cho điện thoại */
+   }
+
+   h2 {
+       font-size: 20px; /* Giảm kích thước tiêu đề phụ cho điện thoại */
+   }
+
+   button {
+       padding: 8px 16px; /* Giảm kích thước nút cho điện thoại */
+       font-size: 14px; /* Giảm kích thước chữ trong nút cho điện thoại */
+   }
+
+   table {
+       font-size: 14px; /* Giảm kích thước chữ trong bảng cho điện thoại */
+   }
+
+   th, td {
+       padding: 8px; /* Giảm khoảng cách trong ô bảng cho điện thoại */
+   }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Quay Ngẫu Nhiên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vòng Quay Ngẫu Nhiên</h1>
+    
+    <div id="wheel">
+        <button id="spinButton">Quay</button>
+        <div id="result"></div>
+    </div>
+
+    <h2>Danh sách người chơi và điểm số</h2>
+    <table id="playerTable">
+        <thead>
+            <tr>
+                <th>Tên người chơi</th>
+                <th>Điểm số</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quốc Nghĩa</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+            <tr>
+                <td>Sẹo</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+            <tr>
+                <td>Ca Huy</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+            <tr>
+                <td>Đức Mạnh</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+            <tr>
+                <td>Min Chu</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+            <tr>
+                <td>Sơn Phùng</td>
+                <td contenteditable="true" class="score">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Lịch sử kết quả</h2>
+    <ul id="history"></ul>
+
+    <h2>Top người chơi</h2>
+    <ol id="topPlayers"></ol>
+
+    <script src="script.js"></script>
+</body>
+</html>
